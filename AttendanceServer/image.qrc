@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>addpic.png</file>
+        <file>menjin.png</file>
+    </qresource>
+</RCC>

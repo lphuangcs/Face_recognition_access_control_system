@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelectWin</class>
+ <widget class="QWidget" name="SelectWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,9">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,2,1">
+       <item>
+        <widget class="QRadioButton" name="studentRb">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>学生信息查询</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="attRb">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>刷脸信息查询</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="selectBt">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border-radius:10px;
+background-color: rgb(51, 122, 183);</string>
+         </property>
+         <property name="text">
+          <string>查询</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="stackedWidgetPage1">
+        <widget class="QLineEdit" name="nameEdit_1">
+         <property name="geometry">
+          <rect>
+           <x>55</x>
+           <y>0</y>
+           <width>140</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>5</y>
+           <width>51</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>姓名：</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="state_comboBox">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>0</y>
+           <width>181</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>正常</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>晚归</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>5</y>
+           <width>91</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>刷脸状态：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>560</x>
+           <y>5</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>日期：</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>0</y>
+           <width>110</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="stackedWidgetPage2">
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>5</y>
+           <width>51</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>姓名：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="nameEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>55</x>
+           <y>0</y>
+           <width>140</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>5</y>
+           <width>60</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>学院：</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="dormitory_comboBox">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>0</y>
+           <width>91</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C9</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>C12</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>505</x>
+           <y>5</y>
+           <width>80</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>宿舍号：</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="school_comboBox">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>0</y>
+           <width>190</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>10</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black; border-radius:5px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>机械与汽车工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>马克思主义学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>建筑学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>土木与交通学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电力学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电子与信息学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>材料科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>化学与化工学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>轻工科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>食品科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>数学学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>物理与光电学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>工商管理学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>外国语学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>计算机科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>自动化科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>体育学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>软件学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>国际教育学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>经济与贸易学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>环境与能源学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>生物科学与工程学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>新闻与传播学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>艺术学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>法学院</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>设计学院</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
